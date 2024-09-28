@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   title: "Customers",
 };
 
-export default function Page({
+export default async function Page({
   searchParams,
 }: {
   searchParams?: { query?: string };
 }) {
-  const query = searchParams?.query || "";
+  const query = await searchParams?.query || "";
 
   return (
     <div className="w-full">
