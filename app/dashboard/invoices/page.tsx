@@ -20,7 +20,7 @@ export default async function Page({
     page?: string;
   };
 }) {
-  const params = await searchParams;
+  const params = await searchParams; // await this!!!
   const query = params?.query || '';
   const currentPage = Number(params?.page) || 1;
 
