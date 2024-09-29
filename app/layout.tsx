@@ -1,7 +1,7 @@
 import "@/app/ui/global.css";
 import { inter } from "./ui/fonts";
 import { Metadata } from "next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { SpeedInsights } from "@vercel/speed-insights/next"; // Import the SpeedInsights component
 
 export const metadata: Metadata = {
   title: {
